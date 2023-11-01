@@ -35,7 +35,7 @@ def main():
             raise ValueError("We need a target IP to run the attack against!")
 
         dst_port = int(input("Input a target port: "))
-        counter = 100
+        counter = 500
         syn_flood(dst_ip, dst_port, counter)
     except ValueError as e:
         print(f"Error: {e}")
