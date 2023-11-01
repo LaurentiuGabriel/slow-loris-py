@@ -1,7 +1,7 @@
 import os
 import sys
 import random
-from scapy.all import *
+from scapy.all import sniff, wrpcap
 
 def random_ip():
     return ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
